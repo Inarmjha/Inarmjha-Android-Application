@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/inback"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:onClick="btnSettingsClicked"
+        android:layout_marginTop="10dp"
+        android:scaleType="centerInside"
+        android:background="@null"
+        android:src="@android:drawable/ic_dialog_dialer"
+        android:layout_gravity="right"
+        />
+
+    <TextView
+        android:text="MESSAGE FROM INARMJHA:"
+        android:textColor="@color/gray"
+        android:textSize="20sp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView7" />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+
+        android:layout_marginTop="40dp"
+        android:hint="Messages from INARMJHA will appear here"
+        android:id="@+id/editTextFromServer"/>
+
+    <TextView
+        android:text="MESSAGE INARMJHA:"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="80dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView4" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/editTextFromServer"
+        android:layout_marginTop="60dp"
+        android:weightSum="1">
+        <!--         <ProgressBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@android:style/Widget.ProgressBar.Large"
+                    android:indeterminate="true"/> -->
+
+        <EditText
+            android:layout_width="290dp"
+            android:layout_height="50dp"
+            android:id="@+id/txtUserName"
+            android:layout_marginLeft="10dp"
+            />
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/arroe"
+            android:onClick="btnSendClick"
+            android:id="@+id/btnSend"
+            android:textSize="20sp"
+            android:text="Send"
+
+            android:layout_weight="0.31" />
+    </LinearLayout>
+
+
+
+</LinearLayout>
+
